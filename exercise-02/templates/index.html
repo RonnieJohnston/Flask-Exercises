@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<h1>Home</h1>
+<p>Enter an integer to find out if it's even or odd.</p>
+<form action="/submit" method="post">
+    <input type="text" name="number" id="number">
+    <input type="submit" value="submit">
+</form>
+{% endblock %}

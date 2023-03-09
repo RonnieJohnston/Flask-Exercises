@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<h1>Calculate</h1>
+{% if (number % 2) == 0: %}
+    <p>{{ number }} is even.</p>
+{% endif %}
+{% if (number % 2) == 1: %}
+    <p>{{ number }} is odd.</p>
+{% endif %}
+<br>
+<a href="/">Go Back Home...</a>
+{% endblock %}
