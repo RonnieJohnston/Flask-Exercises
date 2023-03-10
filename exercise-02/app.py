@@ -11,7 +11,7 @@ number = 0
 def index():
     return render_template('index.html')
 
-@app.post('/submit')
+@app.route('/submit', methods=['POST', 'GET'])
 def submit():
     number = request.form.get('number')
     try:
